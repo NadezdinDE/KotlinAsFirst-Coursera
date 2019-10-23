@@ -6,6 +6,15 @@ import org.junit.jupiter.api.Test
 import kotlin.math.PI
 
 class Tests {
+
+    @Test
+    @Tag("Example")
+    fun cube() {
+        assertEquals(0.0, cube(0.0))
+        assertEquals(8.0, cube(2.0))
+        assertEquals(-27.0, cube(-3.0))
+    }
+
     @Test
     @Tag("Example")
     fun sqr() {
